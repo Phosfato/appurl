@@ -26,5 +26,8 @@
         "prompt-lite": "~0.1.0",
         "rimraf": "^2.5.0",
         "webpack": "~2.2.0"
+    },
+    "dependencies": {
+        "cpy": "^9.0.1"
     }
 }

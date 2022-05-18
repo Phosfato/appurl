@@ -28,9 +28,10 @@ pack() {
     node_modules/.bin/ncp "$SOURCE_DIR" "$TO_SOURCE_DIR"
 
     # copy README & LICENSE to src
-    echo 'Copying README and LICENSE to /src...'
+    echo 'Copying README and LICENSE package.json to /src...'
     node_modules/.bin/ncp "$ROOT_DIR"/LICENSE "$TO_SOURCE_DIR"/LICENSE
     node_modules/.bin/ncp "$ROOT_DIR"/README.md "$TO_SOURCE_DIR"/README.md
+    node_modules/.bin/ncp "$ROOT_DIR"/package.json "$TO_SOURCE_DIR"/package.json
 
     echo 'Creating package...'
     # create package dir

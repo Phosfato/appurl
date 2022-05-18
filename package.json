@@ -1,6 +1,6 @@
 {
-    "name": "@nativescript-community/appurl",
-    "version": "1.3.0",
+    "name": "@Phosfato/appurl",
+    "version": "1.3.1",
     "description": "Register custom URLs for your NativeScript app",
     "scripts": {
         "setup": "ts-patch install",
@@ -13,6 +13,7 @@
     "main": "urlhandler",
     "typings": "urlhandler.d.ts",
     "dependencies": {
+        "nativescript": "^8.2.3",
         "ts-node": "^9.0.0"
     },
     "devDependencies": {
@@ -34,7 +35,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/nativescript-community/appurl.git"
+        "url": "git+https://github.com/Phosfato/appurl.git"
     },
     "nativescript": {
         "platforms": {
@@ -55,9 +56,9 @@
     "author": "Martin Guillong",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/nativescript-community/appurl/issues"
+        "url": "https://github.com/Phosfato/appurl/issues"
     },
-    "homepage": "https://github.com/nativescript-community/appurl",
+    "homepage": "https://github.com/Phosfato/appurl",
     "commitlint": {
         "extends": [
             "@commitlint/config-conventional"
