@@ -23,16 +23,6 @@ export function handleIntent(intent: android.content.Intent, args?) {
         console.error('Unknown error during getting App URL data', e);
     }
 }
-andApp.on(AndroidApplication.activityStartedEvent, function (args: AndroidActivityEventData) {
-    const intent: android.content.Intent = args.activity.getIntent();
-    try {
-        handleIntent(intent, {
-            eventName: AndroidApplication.activityStartedEvent,
-        });
-    } catch (e) {
-        console.error('Unknown error during getting App URL data', e);
-    }
-});
 andApp.on(AndroidApplication.activityNewIntentEvent, function (args: AndroidActivityNewIntentEventData) {
     const intent: android.content.Intent = args.intent;
     try {
